@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // 2. Fetch Poetry Database
     try {
-        const response = await fetch('/poetry_db.json');
+        const response = await fetch('poetry_db.json');
         if (!response.ok) throw new Error('Database file not found');
         poetryDb = await response.json();
         
