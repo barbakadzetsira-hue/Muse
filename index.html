@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>მუზა • ცირა ბარბაქაძის პოეტური თანაშემწე</title>
+    
+    <!-- Meta Descriptions for SEO -->
+    <meta name="description" content="ცირა ბარბაქაძის შემოქმედებითი პოეტური თანაშემწე. წაიკითხეთ, მოიძიეთ და შექმენით ახალი ლექსები თანამედროვე AI ასისტენტის დახმარებით.">
+    <meta name="keywords" content="პოეზია, ცირა ბარბაქაძე, ლექსები, ხელოვნური ინტელექტი, AI აგენტი, კრეატიული წერა">
+    
+    <!-- Google Fonts for Premium Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+GO:wght@300;400;500;700&family=Outfit:wght@300;400;600;700&family=Noto+Serif+Georgian:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Glowing Background Orbs for Premium Aesthetic -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <div class="app-container">
+        
+        <!-- Header Section -->
+        <header class="main-header glass">
+            <div class="logo-area">
+                <span class="logo-icon">✦</span>
+                <div class="logo-text">
+                    <h1 id="app-main-title">მუზა</h1>
+                    <p>ცირა ბარბაქაძის პოეტური თანაშემწე</p>
+                </div>
+            </div>
+            
+            <div class="header-controls">
+                <div id="connection-status" class="status-indicator">
+                    <span class="status-dot"></span>
+                    <span class="status-label">ბაზა ჩატვირთულია</span>
+                </div>
+                <button id="btn-settings" class="icon-button glass-hover" title="პარამეტრები">
+                    <span class="btn-icon">⚙️</span>
+                    <span class="btn-text">პარამეტრები</span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Main Workspace (Three Column Layout) -->
+        <main class="workspace">
+            
+            <!-- Column 1: Library Browser -->
+            <section class="panel panel-library glass" aria-labelledby="library-heading">
+                <div class="panel-header">
+                    <h2 id="library-heading">📚 ბიბლიოთეკა</h2>
+                    <div class="search-box">
+                        <input type="text" id="search-input" placeholder="მოძებნე სიტყვა ან ლექსი..." aria-label="ლექსების ძებნა">
+                        <span class="search-icon">🔍</span>
+                    </div>
+                </div>
+                
+                <!-- Book Selection Tabs -->
+                <div class="book-tabs" id="book-tabs-container">
+                    <!-- Dynamic book tags will go here -->
+                </div>
+
+                <!-- Poems List -->
+                <div class="poems-list-container">
+                    <div class="list-subheader" id="list-subtitle">ყველა ლექსი</div>
+                    <ul class="poems-list" id="poems-list" role="list">
+                        <!-- Dynamic list of poems will go here -->
+                        <div class="loading-placeholder">ლექსები იტვირთება...</div>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Column 2: Chat Workspace (Agent Dialog) -->
+            <section class="panel panel-chat glass" aria-labelledby="chat-heading">
+                <div class="panel-header">
+                    <h2 id="chat-heading">💬 საუბარი მუზასთან</h2>
+                    <p class="panel-desc">გაესაუბრეთ ცირა ბარბაქაძის პოეტურ სტილზე მორგებულ AI აგენტს</p>
+                </div>
+
+                <!-- Chat History -->
+                <div class="chat-history" id="chat-history" role="log" aria-live="polite">
+                    <!-- Welcome message -->
+                    <div class="message assistant-message glass">
+                        <div class="message-sender">
+                            <span class="sender-avatar">✦</span>
+                            <span class="sender-name">მუზა</span>
+                        </div>
+                        <div class="message-content">
+                            გამარჯობა! მე ვარ თქვენი პოეტური თანაშემწე, ცირა ბარბაქაძის შემოქმედებითი ხმით შთაგონებული.
+                            <br><br>
+                            მარცხენა ბიბლიოთეკაში შეგიძლიათ დაათვალიეროთ პოეტის 5 კრებული, მოძებნოთ ნებისმიერი ლექსი და გადმოიტანოთ მარჯვენა <strong>სახელოსნოში</strong>.
+                            <br><br>
+                            აქ კი შეგვიძლია ერთად ვიმუშაოთ:
+                            <ul>
+                                <li>დავწეროთ ახალი ლექსები ცირა ბარბაქაძის მეტაფორული და ფილოსოფიური სტილით.</li>
+                                <li>გავაგრძელოთ თქვენი დაწყებული სტრიქონები.</li>
+                                <li>გავაანალიზოთ პოეტის ლექსების შინაარსი და სტრუქტურა.</li>
+                            </ul>
+                            <em>(მუშაობის დასაწყებად ზედა მარჯვენა კუთხეში დააჭირეთ „პარამეტრებს“ და შეიყვანეთ თქვენი Gemini API გასაღები).</em>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Prompts suggestions -->
+                <div class="quick-prompts">
+                    <button class="quick-prompt-btn glass-hover" id="qp-1">✍️ დამიწერე ლექსი სინათლეზე ცირას სტილში</button>
+                    <button class="quick-prompt-btn glass-hover" id="qp-2">💭 გამაგრძელებინე სტრიქონი...</button>
+                    <button class="quick-prompt-btn glass-hover" id="qp-3">✨ ამიხსენი „უცხოქალაქის“ თემატიკა</button>
+                </div>
+
+                <!-- Message Input Area -->
+                <form id="chat-form" class="chat-input-area">
+                    <textarea id="chat-input" placeholder="სთხოვე მუზას ლექსის დაწერა, გაგრძელება ან ანალიზი..." required aria-label="შეტყობინება აგენტს"></textarea>
+                    <button type="submit" id="btn-send" class="send-button" aria-label="გაგზავნა">
+                        <span class="send-icon">✦</span>
+                    </button>
+                </form>
+            </section>
+
+            <!-- Column 3: Poetry Slate / Reader (Workshop Slate) -->
+            <section class="panel panel-slate glass" aria-labelledby="slate-heading">
+                <div class="panel-header">
+                    <h2 id="slate-heading">✍️ პოეტური სახელოსნო</h2>
+                    <div class="slate-actions">
+                        <button id="btn-clear-slate" class="small-btn glass-hover" title="გასუფთავება">🧹 გასუფთავება</button>
+                        <button id="btn-use-in-prompt" class="small-btn glass-hover accent-btn" title="გაგზავნე ჩატში">💬 გადაიტანე ჩატში</button>
+                    </div>
+                </div>
+
+                <div class="slate-workspace">
+                    <!-- Title Input for Draft -->
+                    <input type="text" id="slate-title" class="slate-title-input" placeholder="ლექსის სათაური..." aria-label="ლექსის სათაური">
+                    
+                    <!-- Poetry Editor / Reader View -->
+                    <textarea id="slate-editor" class="slate-textarea" placeholder="აქ შეგიძლიათ ჩაწეროთ საკუთარი ლექსი, ან ბიბლიოთეკიდან გადმოიტანოთ ცირა ბარბაქაძის ლექსი წასაკითხად და შესაცვლელად..." aria-label="ლექსის ტექსტი"></textarea>
+                </div>
+
+                <div class="slate-footer">
+                    <span id="char-count" class="slate-stats">0 სიმბოლო</span>
+                    <span id="line-count" class="slate-stats">0 სტრიქონი</span>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Settings Modal (Glassmorphic Pop-up) -->
+        <dialog id="settings-dialog" class="settings-modal glass">
+            <div class="modal-header">
+                <h3>⚙️ პარამეტრები</h3>
+                <button id="btn-close-settings" class="close-button" aria-label="დახურვა">✕</button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="api-key-input">Gemini API Key</label>
+                    <input type="password" id="api-key-input" placeholder="შეიყვანეთ AI Studio-ს API გასაღები (AIzaSy...)" autocomplete="off">
+                    <small class="form-help">
+                        გასაღები ინახება მხოლოდ თქვენს ბრაუზერში (`localStorage`). 
+                        თუ არ გაქვთ გასაღები, შეგიძლიათ უფასოდ აიღოთ <a href="https://aistudio.google.com/" target="_blank" rel="noopener noreferrer">Google AI Studio</a>-დან.
+                    </small>
+                </div>
+
+                <div class="form-group">
+                    <label for="model-select">Gemini მოდელი</label>
+                    <select id="model-select">
+                        <option value="gemini-2.5-flash" selected>Gemini 2.5 Flash (რეკომენდებული, სწრაფი)</option>
+                        <option value="gemini-1.5-flash">Gemini 1.5 Flash (სტანდარტული)</option>
+                        <option value="gemini-1.5-pro">Gemini 1.5 Pro (უფრო ძლიერი, შედარებით ნელი)</option>
+                    </select>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="rag-enabled" checked>
+                    <label for="rag-enabled">ავტომატური RAG (პოეტის ლექსების კონტექსტად მიწოდება ჩატისთვის)</label>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="btn-save-settings" class="save-button accent-btn">შენახვა</button>
+            </div>
+        </dialog>
+
+    </div>
+
+    <!-- Application JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
